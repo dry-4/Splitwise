@@ -1,6 +1,5 @@
 package com.lld.splitwise.services;
 
-import com.lld.splitwise.dtos.GroupResponseDto;
 import com.lld.splitwise.exceptions.UserNotFoundException;
 import com.lld.splitwise.modles.Group;
 import com.lld.splitwise.modles.User;
@@ -20,6 +19,7 @@ public class GroupService {
         this.userRepository = userRepository;
         this.groupRepository = groupRepository;
     }
+
     public Group addGroup(String createdBy, String groupName) throws UserNotFoundException {
         Optional<User> optionalUser = userRepository.findByName(createdBy);
         Group group = new Group();

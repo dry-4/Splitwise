@@ -1,8 +1,6 @@
 package com.lld.splitwise.commands;
 
 import com.lld.splitwise.controllers.GroupController;
-import com.lld.splitwise.dtos.GroupRequestDto;
-import com.lld.splitwise.dtos.GroupResponseDto;
 import org.springframework.stereotype.Component;
 
 import java.util.Arrays;
